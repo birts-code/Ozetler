@@ -1,1 +1,9 @@
-# Ozetler
+# BiRTS: Yüksek performanslı, Çok Büyük Ölçekli Beyin Simülasyonu İçin Runtime Sistemi 
+
+Beyni anlamak için bilim adamlarınca kullanılan önemli araçlardan biri beyin simülatörleridir. Bir beyin simülatör yazılımı, beyni oldukça fazla sayıdaki nöronlar kullanarak ve büyük ağlar oluşturarak inşa eder. Fakat günümüzde var olan hesaplama kapasitesi insan beyninde var olan yüz milyar nöron ve her bir nöronun yaptığı on binlerce sinaptik bağlantıyı sanal ortamda gerçekleştirmek için yeterli değildir. Yapılan deneyler, insan beynini simüle etmek için günümüzün en hızlı süper bilgisayarının hesaplama gücünün milyonlarca kat artması gerektiğini göstermektedir.
+Bu projede, yüksek performanslı heterojen bilgisayar platformlarında çalışabilen beyin simülatörleri tarafından kullanılacak bir runtime (çalışma zamanı) sistemi geliştirilmesi hedeflenmiştir. Bu kapsamda, beyin simülatörünün hesaplama kısmı heterojen GPU tabanlı bir sistemde gerçeklenmiştir. Beyinden esinlenerek oluşturulan ve BiRTS (Brain Inspired RunTime System) adını verdiğimiz runtime sistemi ile modern heterojen küme tabanlı ortamlarında beyin simülasyonlarını hızlandırmak hedeflenmiştir.
+Beyin simülatörlerinde en çok zaman alan kısım düğümler arasında gerçekleşen haberleşmelerdir. Dağınık sistemlerde haberleşmeleri hızlandırmak için, çizge ayırımı kullanarak donanım yakınlığı ile ateşleme değişiminin hızlandırılması, sürekli haberleşme tekniği tabanlı gerçeklemeler, tek yönlü haberleşme ve komşu gruplaştırma yöntemleri teknikleri yardımı ile BiRTS kütüphanesi geliştirilmiştir. Bu kapsamda yapılan ön çalışmalar, NEURON simülatörü üzerinde denenmiştir. BiRTS kütüphanesi sayesinde NEURON simülatörünü birçok beyin modeli üzerinde %20’ye kadar hızlandırdığımızı gözlemledik.
+Bu çalışmalara ek olarak, BiRTS kütüphanesi yardımı ile Parkinson hastalığı için yaygın olarak kullanılan Derin Beyin Sitimülasyonuna yönelik olarak NEURON simülatörü üzerinde farklı beyin modelleri ile çalışmalar yapılmış olup, bu çalışmalarda, BiRTS kütüphanesi sayesinde toplam zamanda %15-20 aralığında hızlanma sağlanmıştır.  
+
+
+Bu çalışmamız TÜBİTAK 1003 projesi olarak  desteklenmiştir.
